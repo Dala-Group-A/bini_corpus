@@ -1,4 +1,6 @@
 pandas
 pypdf
-unstructured
-
+pytesseract
+pdfplumber
+pandas
+pdf2image
