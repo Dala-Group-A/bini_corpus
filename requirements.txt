@@ -4,3 +4,4 @@ pytesseract
 pdfplumber
 pandas
 pdf2image
+dvc
