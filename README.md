@@ -22,8 +22,9 @@ pip install -r requirements.txt
 - `data/`: Sample dictionaries and corpora
 - `notebooks/`: Jupyter notesbooks for experimentation and modelling
 - `README.md`: Project documentation
+- `tessa_data`: training data for all training tools and tesseract model
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change, feel free to check out the CONTRIBUTING.md.
 unicodes for less commmonly used characters can be found [here](https://www.compart.com/en/unicode/)
