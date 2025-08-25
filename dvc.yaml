@@ -1,0 +1,24 @@
+# use this dvc pipeline to re-create the entire extraction, training and loading process
+stages:
+  tessa_train:
+    cmd:
+      python src/tessa_script.py
+    deps:
+      -src/tessa_script.py
+    outs:
+      - bini.exp0.box
+      - bini.exp0.lstmf
+      - bini.exp0.osd
+      - bini.exp0.tif
+      - bini.unicharset
+      - fonts.conf
+      - bini.word-dawg
+
+  extract:
+    cmd:
+      python src/extract.py
+    deps:
+      - src/extract.py
+      - bini_dict.pdf
+    outs:
+      - bini_corpora.csv
