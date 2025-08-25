@@ -29,7 +29,7 @@ def read_pdf(file_path, start_page, as_img: bool):
                     file.write_text(page.extract_text())
     else:
         dest_path_img.mkdir(exist_ok=True)
-        convert_from_path("bini_dict.pdf", output_folder=dest_path_img, fmt="png")
+        convert_from_path("bini_dict.pdf", output_folder=dest_path_img, fmt="png", output_file="page", thread_count=4) # type: ignore
                 
 
 def prepare_normalized():
@@ -59,4 +59,4 @@ def write_txt_from_image():
 
 
 if __name__ == "__main__":
-    pass
+    read_pdf("bini_dict.pdf", start_page=18, as_img=True)
