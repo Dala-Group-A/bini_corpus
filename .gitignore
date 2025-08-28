@@ -1,7 +1,7 @@
-/groundt
-/groundt2
-/output_folder
-/pdf_img
+groundt/
+groundt2/
+output_folder/
+pdf_img/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
