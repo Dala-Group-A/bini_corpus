@@ -5,3 +5,4 @@ pdfplumber
 pandas
 pdf2image
 dvc
+text-to-image
